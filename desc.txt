@@ -1,0 +1,3 @@
+frontend template : https://github.com/BlackrockDigital/startbootstrap-clean-blog
+backend template: https://github.com/puikinsh/Adminator-admin-dashboard
+project version: 5.6
