@@ -20,3 +20,22 @@ Route::post('contact', 'PublicController@contactPost' )->name('contactPost');
 Auth::routes();
 
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Admin Routes
+|--------------------------------------------------------------------------
+|
+| contiene todos las rutas del admins
+|
+|
+*/
+Route::prefix('admin')->group(function (){
+
+     #=====   Admin Dashboard    =============
+    route::get('/dashboard','AdminController@dashboard')->name('adminDashboard');
+
+});
