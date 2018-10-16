@@ -54,7 +54,7 @@
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link active">
-                    <i class="icon icon-speedometer"></i> User
+                    <i class="icon icon-speedometer"></i> Dashboard
                 </a>
             </li>
 
@@ -72,7 +72,7 @@
 
             <li class="nav-item">
                 <a href="tables.html" class="nav-link">
-                    <i class="icon icon-grid"></i> Users
+                    <i class="icon icon-user"></i> Users
                 </a>
             </li>
 

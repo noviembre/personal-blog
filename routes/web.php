@@ -36,6 +36,26 @@ Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 Route::prefix('admin')->group(function (){
 
      #=====   Admin Dashboard    =============
-    route::get('/dashboard','AdminController@dashboard')->name('adminDashboard');
+    Route::get('/dashboard','AdminController@dashboard')->name('adminDashboard');
+    Route::get('/posts','AdminController@posts')->name('adminPost');
+    Route::get('/comments','AdminController@comments')->name('adminComments');
+    Route::get('/users','AdminController@users')->name('adminUsers');
+
+});
+
+#=====   User Dashboard    =============
+Route::prefix('user')->group(function (){
+
+    Route::get('/dashboard','UserController@dashboard')->name('userDashboard');
+    Route::get('/comments','UserController@comments')->name('userComments');
+
+});
+
+#=====   Author Dashboard    =============
+Route::prefix('author')->group(function (){
+
+    Route::get('/dashboard','AuthorController@dashboard')->name('authorDashboard');
+    Route::get('/posts','AuthorController@posts')->name('authorPosts');
+    Route::get('/comments','AuthorController@comments')->name('authorComments');
 
 });
