@@ -22,4 +22,14 @@ class UserController extends Controller
 
         return back();
     }
+
+    public function dashboard()
+    {
+        return view('user.dashboard');
+    }
+
+    public function comments()
+    {
+        return view('user.comments');
+    }
 }

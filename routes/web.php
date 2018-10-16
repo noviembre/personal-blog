@@ -37,7 +37,7 @@ Route::prefix('admin')->group(function (){
 
      #=====   Admin Dashboard    =============
     Route::get('/dashboard','AdminController@dashboard')->name('adminDashboard');
-    Route::get('/posts','AdminController@posts')->name('adminPost');
+    Route::get('/posts','AdminController@posts')->name('adminPosts');
     Route::get('/comments','AdminController@comments')->name('adminComments');
     Route::get('/users','AdminController@users')->name('adminUsers');
 
