@@ -22,7 +22,8 @@
 
 
 
-
+            <!--=============   AUTHOR ROUTES STARTS   =============-->
+            @if(Auth::user()->author == true)
             <li class="nav-item nav-dropdown">
                Author
             </li>
@@ -44,10 +45,12 @@
                 </a>
             </li>
 
+            @endif
+        <!--=============   AUTHOR ROUTES ENDS   =============-->
 
 
-
-
+            <!--=============   ADMIN ROUTES STARTS   =============-->
+             @if(Auth::user()->admin == true)
 
             <li class="nav-item">
                 Admin
@@ -76,6 +79,8 @@
                 </a>
             </li>
 
+             @endif
+        <!--=============   ADMIN ROUTES ENDS   =============-->
 
 
 
