@@ -15,9 +15,11 @@ class PublicController extends Controller
             );
     }
 
-    public function singlePost()
+    public function singlePost(Post $post)
     {
-        return view('singlePost');
+        return view('singlePost',compact(
+            'post'
+            ));
     }
 
     public function about()
