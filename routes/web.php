@@ -48,6 +48,8 @@ Route::prefix('user')->group(function (){
 
     Route::get('/dashboard','UserController@dashboard')->name('userDashboard');
     Route::get('/comments','UserController@comments')->name('userComments');
+
+    Route::post('/comment/{id}/delete','UserController@deleteComment')->name('deleteComment');
     Route::get('/profile','UserController@profile')->name('userProfile');
     Route::post('/profile','UserController@profilePost')->name('userProfilePost');
 
